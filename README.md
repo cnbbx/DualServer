@@ -11,7 +11,8 @@ g++ -o DualServer.exe DualServer.cpp -lwsock32 -liphlpapi -lws2_32
 The enclosed dualserver executable file may only run on Intel Linux 32 bit version. For 64 bit Linux system, you can try:
  
 ```bash
-#g++ dualserverd.cpp -odualserverd -lpthread #g++ dualserverd.cpp -odualserverd -lpthread -lgcc_s 
+#g++ dualserverd.cpp -odualserverd -lpthread
+#g++ dualserverd.cpp -odualserverd -lpthread -lgcc_s 
 ```
 
 Fork of https://sourceforge.net/projects/dhcp-dns-server/
